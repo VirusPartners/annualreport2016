@@ -1,0 +1,59 @@
+
+.ntm-wrapper  {
+  margin: 10px 0;
+  &.right {
+    float: right;
+    .ntm-desc p {
+      color: #00aeef;
+    }
+  }
+  &.left {
+    float: left;
+  }
+  & > div {
+    float: left;
+  }
+  .ntm-icon {
+    margin: 0 10px;
+    width: 75px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .ntm-desc {
+    p {
+      font-family: "maven_proregular";
+      font-size: 22px;
+      color: #f89c1c;
+      margin: -8px 0;
+      span {
+        font-size: 46px;
+      }
+      &.sub {
+        color: #adaa9a;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: "maven_proregular";
+        margin-top: -13px;
+      }
+    }
+  }
+}
+
+.numbers-matter-wrapper {
+  overflow: hidden;
+  margin: 40px 0;
+  .numbers-matter {
+    padding: 0 80px;
+  }
+  & > div:last-of-type {
+    padding: 0 40px;
+    & > div:first-of-type {
+      margin-right: 50px;
+      .ntm-icon {
+        margin-top: 50px;
+      }
+    }
+  }
+}

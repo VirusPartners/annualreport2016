@@ -1,0 +1,417 @@
+// #corporate-governance {
+// 	.inside-body {
+// 		h2 {
+// 			font-family: $mavenBold;
+// 			color: $ocean;
+// 			margin: 15px;
+// 			font-size: 18px;
+// 		}
+// 		p {
+// 			text-indent: 30px;
+// 			font-size: 16px;
+// 			color: #585858;
+// 			font-family: 'maven_proregular';
+// 			margin-bottom: 0;
+// 			&:last-of-type {
+// 				margin-bottom: 0;
+// 			}
+// 		}
+// 		li {
+// 			font-size: 16px;
+// 			color: #585858;
+// 			font-family: 'maven_proregular';
+// 		}
+// 		.table-of-board-committee {
+// 			overflow: scroll;
+// 			margin: 20px 0;
+// 			font-family: $mavenRegular;
+// 			width: 100%;
+// 			tr {
+// 				border-bottom: 1px solid $ocean;
+// 				&:nth-child(1) {
+// 					background-color: $ocean;
+// 					.header {
+// 						text-transform: uppercase;
+// 						text-align: center;
+// 						color: $light;
+// 					}
+// 				}
+// 				&:nth-child(2) {
+// 					th {
+// 						border-right: 1px solid $ocean;
+// 						border-left: 1px solid $ocean;
+// 						padding: 0 10px;
+// 					}
+// 				}
+// 				td {
+// 					border-right: 1px solid $ocean;
+// 					border-left: 1px solid $ocean;
+// 					padding: 0 10px
+// 				}
+// 			}
+// 		}
+// 		.board-of-attendance {
+// 			overflow: scroll;
+// 			margin: 20px 0;
+// 			font-family: $mavenRegular;
+// 			width: 100%;
+// 			tr {
+// 				&:nth-child(1) {
+// 					background-color: $ocean;
+// 					.header {
+// 						text-transform: uppercase;
+// 						text-align: center;
+// 						color: $light;
+// 						border: 1px solid $ocean;
+// 					}
+// 				}
+// 				&:nth-child(2) {
+// 					td {
+// 						width: 85%;
+// 					}
+// 				}
+// 				td {
+// 					border: 1px solid $ocean;
+// 					padding: 0 10px;
+// 					text-align: center;
+// 					padding-left: 10px;
+//     				padding-right: 10px;
+// 					&:nth-of-type(1) {
+// 						text-align: left;
+// 					}
+// 					&.empty {
+// 						background-color: rgba(0, 174, 239, 0.20);
+// 					}
+// 					&.text-center {
+// 						text-align: center;
+// 					}
+// 				}
+// 			}
+// 		}
+// 		.table-of-remuneration {
+// 			overflow: scroll;
+// 			margin: 20px 0;
+// 			font-family: $mavenRegular;
+// 			width: 100%;
+// 			tr {
+// 				&:nth-child(1) {
+// 					background-color: $ocean;
+// 					.header {
+// 						text-transform: uppercase;
+// 						text-align: center;
+// 						color: $light;
+// 						border: 1px solid $ocean;
+// 					}
+// 				}
+// 				&:nth-child(2) {
+// 					th {
+// 						text-align: center;
+// 						border: 1px solid $ocean;
+// 					}
+// 				}
+// 				td {
+// 					border: 1px solid $ocean;
+// 					padding: 0 10px;
+// 					padding-left: 10px;
+//     				padding-right: 10px;
+// 				}
+// 			}
+// 		}
+// 		.note {
+// 			font-family: $mavenRegular;
+// 			font-size: 13px;
+// 		}
+// 		.telephone {
+// 			tr > td {
+// 				font-family: $mavenRegular;
+// 			}
+// 			margin: 20px 0;
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+#corporate-governance {
+	margin: 20px;
+	.indent {
+		text-indent: 30px;
+		font-size: 16px;
+		font-family: $mavenRegular;
+		color: #585858;
+	}
+	.no-indent {
+		text-indent: 0;
+	}
+	strong {
+		font-size: 16px;
+		color: #585858;
+		font-family: 'maven_proregular';
+		margin-bottom: 0;
+	}
+	.insidepage-container {
+		margin: 50px 50px;
+		h2.page-title {
+			font-family: "maven_proregular";
+			font-size: 32px;
+			color: $sun;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	.corporate-governance-container {
+		padding: 60px 0;
+		border-bottom: 1px solid #d6d6d6;
+		display: none;
+		&.active {
+			display: block;
+		}
+		.note {
+			padding: 0;
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				span {
+					color: $ocean;
+				}
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 15px;
+				font-size: 18px;
+			}
+			p {
+				color: #585858;
+			}
+			.head-text {
+				color: #434343;
+				font-size: 24px;
+				font-family: $mavenRegular;
+				line-height: 1.5em;
+			}
+			.blurb {
+			    color: #434343;
+			    font-size: 35px;
+			    font-family: $savoye;
+			    font-weight: bold;
+			    text-indent: 30px;
+			}
+		}
+		.corporate-governance-thumb {
+			text-align: right;
+			img {
+				width: 100%;
+				max-width: 520px;
+				height: auto;
+			}
+		}
+		.corporate-governance-body {
+			clear: both;
+			.big {
+				font-size: 24px;
+				line-height: 32px;
+			}
+			.blurb-image {
+				position: relative;
+				.blurb {
+					color: $sun;
+				    font-size: 35px;
+				    font-family: $savoye;
+				    text-indent: 30px;
+				    margin: 48px 0;
+			        position: absolute;
+				    width: 50%;
+				    top: 30%;
+				    bottom: 0;
+				    line-height: 43px;
+				}
+				img {
+				    height: auto;
+   					 width: 100%;
+				}
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 48px 0 15px 0;
+				font-size: 18px;
+				text-transform: uppercase;
+				&.no-leading {
+					margin: 15px 0 15px 0;
+				}
+			}
+			p {
+				text-indent: 30px;
+				font-size: 16px;
+				line-height: 24px;
+				color: #585858;
+				font-family: 'maven_proregular';
+				margin-bottom: 0;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				&.no-indent {
+					text-indent: 0;
+				}
+			}
+			h3 {
+				font-size: 16px;
+				font-family: $mavenRegular;
+			}
+			ul, ol {
+				font-family: $mavenRegular;
+				font-size: 16px;
+				color: #585858;
+			}
+			.table-of-board-committee {
+				overflow: scroll;
+				margin: 20px 0;
+				font-family: $mavenRegular;
+				width: 100%;
+				tr {
+					border-bottom: 1px solid $ocean;
+					&:nth-child(1) {
+						background-color: $ocean;
+						.header {
+							text-transform: uppercase;
+							text-align: center;
+							color: $light;
+						}
+					}
+					&:nth-child(2) {
+						th {
+							border-right: 1px solid $ocean;
+							border-left: 1px solid $ocean;
+							padding: 0 10px;
+						}
+					}
+					td {
+						border-right: 1px solid $ocean;
+						border-left: 1px solid $ocean;
+						padding: 0 10px
+					}
+				}
+			}
+			.board-of-attendance {
+				overflow: scroll;
+				margin: 20px 0;
+				font-family: $mavenRegular;
+				width: 100%;
+				tr {
+					&:nth-child(1) {
+						background-color: $ocean;
+						.header {
+							text-transform: uppercase;
+							text-align: center;
+							color: $light;
+							border: 1px solid $ocean;
+						}
+					}
+					&:nth-child(2) {
+						td {
+							width: 85%;
+						}
+					}
+					td {
+						border: 1px solid $ocean;
+						padding: 0 10px;
+						text-align: center;
+						padding-left: 10px;
+	    				padding-right: 10px;
+						&:nth-of-type(1) {
+							text-align: left;
+						}
+						&.empty {
+							background-color: rgba(0, 174, 239, 0.20);
+						}
+						&.text-center {
+							text-align: center;
+						}
+					}
+				}
+			}
+			.table-of-remuneration {
+				overflow: scroll;
+				margin: 20px 0;
+				font-family: $mavenRegular;
+				width: 100%;
+				tr {
+					&:nth-child(1) {
+						background-color: $ocean;
+						.header {
+							text-transform: uppercase;
+							text-align: center;
+							color: $light;
+							border: 1px solid $ocean;
+						}
+					}
+					&:nth-child(2) {
+						th {
+							text-align: center;
+							border: 1px solid $ocean;
+						}
+					}
+					td {
+						border: 1px solid $ocean;
+						padding: 0 10px;
+						padding-left: 10px;
+	    				padding-right: 10px;
+					}
+				}
+			}
+			.note {
+				font-family: $mavenRegular;
+				font-size: 13px;
+			}
+			.telephone {
+				tr > td {
+					font-family: $mavenRegular;
+					padding-right: 10px;
+				}
+				margin: 20px 0;
+			}
+		}
+	}
+
+	#page_navigation {
+		float: right;
+		margin: 30px 0;
+		a {
+			border: 1px solid #00aeef;
+			color: #00aeef;
+			font-family: 'maven_proregular';
+			padding: 8px 10px;
+			margin: 0 5px;
+			font-size: 11px;
+			text-decoration: none;
+			&:hover, &.active_page {
+				background-color: #00aeef;
+				color: #FFF;
+			}
+		}
+	}
+
+	.corporate-governance-body  {
+		.sig-container {
+			display: flex;
+			justify-content: flex-end;
+			.sig {	
+				display: flex;
+				flex-direction: column;
+				img {
+					height: auto;
+					width: 160px;
+				}
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

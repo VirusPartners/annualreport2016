@@ -1,0 +1,77 @@
+#theme {
+	.theme-container {
+		background-color: $fade;
+		height: 500px;
+		width: 100%;
+		padding: 100px 0;
+		.theme-content {
+		    border: 1px solid $sun;
+		    width: 100%;
+		    z-index: 1;
+		    max-width: 80%;
+		    position: relative;
+		    margin: auto;
+		    .theme-title {
+				position: absolute;
+			    top: -45px;
+			    background-color: $fade;
+			    padding: 0 15px;
+			    left: 5%;	
+				p {
+					font-family: $savoye;
+					font-size: 63px;
+					color: $sun;
+					font-weight: bold;
+					span {
+						color: $ocean;
+					}
+				}
+			}
+			.theme-content-container {	
+			    display: flex;
+			    padding: 50px 0;
+			    position: relative;
+				.theme-text {
+					width: 50%;
+					padding-left: 65px;
+					p {
+						font-family: $mavenRegular;
+						font-size: 14px;
+						margin-bottom: 30px;
+						span {
+							font-family: $mavenBold;
+							font-style: italic;
+						}
+					}
+			    	a.download-pdf {
+					    text-transform: uppercase;
+						font-family: $mavenBold;
+						color: $ocean;
+						font-size: 18px;
+						text-decoration: none;
+					    position: absolute;
+					    left: 0;
+					    padding-left: 52px;
+				    	.download-icon {
+						    height: 17px;
+						    width: 17px;
+						    display: inline-block;
+						    background: url(../images/download-icon-ocean.png);
+						    background-repeat: no-repeat;
+						    margin-left: 10px;
+				    	}
+			    	}
+				}
+				.theme-image {
+				    position: absolute;
+				    right: 0;
+				    top: -150px;
+				    margin-right: 50px;
+					img {
+						height: 400px;
+					}
+				}
+			}
+		}
+	}
+}

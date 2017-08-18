@@ -1,0 +1,79 @@
+#report {
+	.report-content {
+		margin: 100px auto 50px auto;
+		position: relative;
+		.report-inner {
+		    border-top: 1px solid $sun;
+		    width: 100%;
+		    z-index: 1;
+		    max-width: 80%;
+		    position: relative;
+		    margin: auto;
+		    .report-title {
+				position: absolute;
+			    top: -12px;
+			    background-color: $light;
+			    padding: 0 15px;
+			    left: 5%;
+			    text-transform: uppercase;
+				p {
+					font-family: $mavenBold;
+					font-size: 16px;
+					color: $sun;
+					span {
+						color: $ocean;
+					}
+				}
+			}
+			.report-content-container {
+				padding: 50px 0 50px 0;
+				overflow: hidden;
+				.report-inner-title {
+					font-size: 14px;
+					font-family: $mavenBold;
+					text-transform: uppercase;
+				}
+				p {
+					font-size: 14px;
+					font-family: $mavenRegular;
+				}
+			}
+		}
+	}
+	.feedback {
+    	width: 100%;
+    	display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    max-width: 80%;
+	    margin: auto;
+	    padding: 0 15px 0 15px;
+	    .feedback-content {
+	    	margin-bottom: 20px;
+	    	.feedback-title {
+				font-size: 14px;
+				font-family: $mavenBold;
+				text-transform: uppercase;
+	    	}
+	    	p {
+				font-family: $mavenRegular;
+	    	}
+	    }
+		.contact {
+			display: flex;
+			padding-bottom: 50px;
+			p {
+				font-family: $mavenRegular;
+				margin: 0 10px 0 0;
+				width: 100%;
+				padding-right: 15px;
+				span {
+					font-family: $mavenBold;
+				}
+				&:nth-child(2) {
+					padding-left: 15px;
+				}
+			}
+		}
+	}
+}

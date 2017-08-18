@@ -1,0 +1,566 @@
+#csr {
+	margin: 20px;
+	.indent {
+		text-indent: 30px;
+		font-size: 16px;
+		font-family: $mavenRegular;
+		color: #585858;
+	}
+	.big {
+		line-height: 28px;
+		font-size: 20px;
+	}
+	.insidepage-container {
+		margin: 50px 50px;
+		h2.page-title {
+			font-family: "maven_proregular";
+			font-size: 32px;
+			color: $sun;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		h2.no-leading {
+			margin: 15px 0 15px 0;
+		}
+		.message-tab {
+			margin-top: 60px;
+		}
+	}
+	.csr-container {
+		padding: 60px 0;
+		border-bottom: 1px solid #d6d6d6;
+		display: none;
+		&.active {
+			display: block;
+		}
+		.note {
+			padding: 0;
+			position: relative;
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				span {
+					color: $ocean;
+				}
+			}
+			img {
+			    // position: absolute;
+			    // right: 8%;
+			    // top: 0;
+			    width: 8%;
+			    margin-right: 40px;
+			    float: left;
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 15px;
+				font-size: 18px;
+			}
+			p {
+				color: #585858;
+			}
+			.head-text {
+				color: #434343;
+				font-size: 24px;
+				font-family: $mavenRegular;
+				line-height: 1.5em;
+			}
+			.blurb {
+			    color: #434343;
+			    font-size: 35px;
+			    font-family: $savoye;
+			    font-weight: bold;
+			    text-indent: 30px;
+			}
+		}
+		.csr-thumb {
+			text-align: right;
+			img {
+				width: 100%;
+				max-width: 520px;
+				height: auto;
+			}
+		}
+		.csr-body {
+			clear: both;
+			.timeline {
+				position: relative;
+				.question {
+					text-align: center;
+					p {
+						color: $sun;
+						text-transform: uppercase;
+						font-family: $mavenRegular;
+						font-size: 18px;
+						margin: 0;
+						text-indent: 0;
+					}
+					h2 {
+						color: $ocean;
+						font-family: $mavenBold;
+						text-transform: uppercase;
+						margin: 0;
+						font-size: 32px;
+					}
+				}
+				.line-vertical {
+					// height: 100vh;
+						border-left: 1px solid #d2bdbd;
+				    width: 50%;
+				    position: relative;
+				    margin: 20px 0 0 50%;
+		        padding: 10px 0;
+    			.dot-top {
+						height: 10px;
+						width: 10px;
+						border-radius: 50px;
+						border: 2px solid #d2bdbd;
+						position: absolute;
+						left: -5px;
+						top: -8px;
+					}
+					.dot-bottom {
+						height: 10px;
+						width: 10px;
+						border-radius: 50px;
+						border: 2px solid #d2bdbd;
+						position: absolute;
+						left: -5px;
+						bottom: -8px;
+					}
+					// .even {
+					// 	height: 200px;
+					// 	margin-left: -100%;
+					// 	position: relative;
+					// 	.line-horizontal {
+					// 		border-bottom: 1px solid #d2bdbd;
+					// 		width: 12%;
+					// 		margin-left: 37.6%;
+					// 		height: 50%;
+					// 		position: relative;
+					// 		.dot-side {
+					// 			height: 100px;
+					// 			width: 100px;
+					// 			border-radius: 50px;
+					// 			border: 2px solid #d2bdbd;
+					// 			position: absolute;
+					// 			top: 50%;
+					// 			right: 100%;
+					// 		}
+					// 		.dot-middle {
+					// 			background-color: orange;
+					// 			height: 10px;
+					// 			width: 10px;
+					// 			border-radius: 50px;
+					// 			bottom: -6%;
+					// 			position: absolute;
+					// 			left: 100%;
+					// 		}
+					// 	}
+					// 	.chat {
+					// 		height: 100%;
+					// 		width: 45%;
+					// 		border: 1px solid orange;
+					// 		position: absolute;
+					// 		// margin-left: 50%;
+					// 		top: 0;
+					// 		right: 0;
+					// 		&::before, &::after {
+					// 	    content: '';
+					// 	    width: 47px;
+					// 	    height: 48px;
+					// 	    position: absolute;
+					// 		}
+					// 		&::before {
+					// 	    background: url(../images/quote-left.png);
+					// 	    left: -23px;
+					// 	    top: -23px;
+					// 		}
+					// 		&::after {
+					// 	    background: url(../images/quote-right.png);
+					// 	    right: -23px;
+					// 	    bottom: -23px;
+					// 		}
+					// 	}
+					// }
+					// .odd{
+					// 	height: 200px;
+					// 	margin-left: -100%;
+					// 	position: relative;
+					// 	.line-horizontal {
+					// 	    border-bottom: 1px solid #d2bdbd;
+					// 	    width: 12%;
+					// 	    margin-left: 50.6%;
+					// 	    height: 50%;
+					// 	    position: relative;;
+					// 		.dot-side {
+					// 		    height: 100px;
+					// 		    width: 100px;
+					// 		    border-radius: 50px;
+					// 		    border: 2px solid #d2bdbd;
+					// 		    position: absolute;
+					// 		    top: 50%;
+					// 		    left: 100%;
+					// 		}
+					// 		.dot-middle {
+					// 			background-color: orange;
+					// 		    height: 10px;
+					// 		    width: 10px;
+					// 		    border-radius: 50px;
+					// 		    bottom: -6%;
+					// 		    position: absolute;
+					// 		    left: -8%;
+					// 		}
+					// 	}
+					// 	.chat {
+					// 	    height: 100%;
+					// 	    width: 45%;
+					// 	    border: 1px solid orange;
+					// 	    position: absolute;
+					// 	    // margin-left: 50%;
+					// 	    top: 0;
+					// 	    right: 55%;
+					// 			&::before, &::after {
+					// 		    content: '';
+					// 		    width: 47px;
+					// 		    height: 48px;
+					// 		    position: absolute;
+					// 			}
+					// 			&::before {
+					// 		    background: url(../images/quote-left.png);
+					// 		    left: -23px;
+					// 		    top: -23px;
+					// 			}
+					// 			&::after {
+					// 		    background: url(../images/quote-right.png);
+					// 		    right: -23px;
+					// 		    bottom: -23px;
+					// 			}
+					// 	}
+					// }
+
+					// added
+
+					.timeline-row {
+						// height: 200px;
+						margin-left: -100%;
+						position: relative;
+				    margin-bottom: 80px;
+				    margin-top: 80px;
+						.line-horizontal {
+							border-bottom: 1px solid #d2bdbd;
+							width: 8%;
+							height: 50%;
+							position: relative;
+						}
+						.dot-side {
+							height: 100px;
+							width: 100px;
+							border-radius: 50px;
+							// border: 2px solid #d2bdbd;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+							img {
+								width: 100%;
+								height: 100px;
+								overflow: hidden;
+								border-radius: 50%;
+							}
+							&::before {
+						    background: url(../images/chat/smileys.png) 0 0;
+						    content: '';
+						    background-size: 160px;
+						    width: 38px;
+						    height: 38px;
+						    position: absolute;
+						    top: 5px;
+							}
+							&.ngee::before {
+								background-position: 0 0;
+							}
+							&.heart::before {
+    						background-position: -40px 0;
+							}
+							&.stars::before {
+								background-position: -80px 0;
+							}
+							&.smile::before {
+								background-position: -121px 0;
+							}
+						}
+						.dot-middle {
+							background-color: orange;
+							height: 10px;
+							width: 10px;
+							border-radius: 50px;
+							bottom: -6%;
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							margin: auto;
+						}
+						.chat {
+							height: auto;
+							width: 45%;
+							border: 1px solid orange;
+							position: absolute;
+    					padding: 40px 30px 30px;
+							display: flex;
+							justify-content: center;
+							// margin-left: 50%;
+							top: 0;
+							&::before, &::after {
+						    content: '';
+						    width: 47px;
+						    height: 48px;
+						    position: absolute;
+							}
+							&::before {
+						    background: url(../images/quote-left.png);
+						    left: -23px;
+						    top: -23px;
+							}
+							&::after {
+						    background: url(../images/quote-right.png);
+						    right: -23px;
+						    bottom: -23px;
+							}
+							p {
+								text-indent: 0;
+							}
+						}
+						
+						.chat-title {
+					    position: absolute;
+					    top: -32px;
+					    background-color: #FFF;
+					    text-align: center;
+					    padding: 0 20px;
+							span {
+								display: block;
+								margin: 0;
+							}
+							.name {
+								color: $sun;
+								font-size: 24px;
+								font-family: $mavenBold;
+							}
+							.info {
+								color: $ocean;
+								font-size: 16px;
+								font-family: $mavenMedium;
+							}
+						}
+
+						&.even {
+							.line-horizontal {
+								margin-left: 42%;
+							}
+							.dot-side {
+								left: 32.5%;
+								&::before {
+							    left: -20px;
+								}
+							}
+							.chat {
+								right: 0;
+							}
+						}
+						&.odd {
+							.line-horizontal {
+								margin-left: 50%;
+							}
+							.dot-side {
+						    right: 32.5%;
+								&::before {
+							    right: -20px;
+								}
+							}
+							.chat {
+								right: 55%;
+							}
+						}
+					}
+
+					// end
+
+				}
+			}	
+			img {
+				margin: 0 0 10px 0;
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 48px 0 15px 0;
+				font-size: 18px;
+				text-transform: uppercase;
+				&.no-leading {
+					margin: 15px 0 15px 0;
+				}
+			}
+			p {
+				text-indent: 30px;
+				font-size: 16px;
+				line-height: 24px;
+				color: #585858;
+				font-family: 'maven_proregular';
+				margin-bottom: 0;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				&.big {
+					font-size: 24px;
+					line-height: 32px;
+				}
+				&.bordered {
+					border: 2px solid $ocean;
+				    border-top-left-radius: 20px;
+				    border-top-right-radius: 20px;
+				    border-bottom-left-radius: 20px;
+				    border-bottom-right-radius: 20px;
+				    padding: 10px;
+				}
+				&.bordered-orange {
+					border: 2px solid $sun;
+				    border-top-left-radius: 20px;
+				    border-top-right-radius: 20px;
+				    border-bottom-left-radius: 20px;
+				    border-bottom-right-radius: 20px;
+				    padding: 10px;
+				}
+				&.convo-name {
+					margin-top: 10px;
+				}
+			}
+			h3 {
+				font-size: 16px;
+				font-family: $mavenRegular;
+			}
+			ul > li {
+				font-family: $mavenRegular;
+				font-size: 16px;
+				color: #585858;
+			}
+			.table {
+				display: flex;
+				justify-content: center;
+				.student {
+					overflow: scroll;
+					margin: 20px 0;
+					font-family: $mavenRegular;
+					tr {
+						&:nth-child(1) {
+							background-color: $ocean;
+							.header {
+								text-transform: uppercase;
+								text-align: center;
+								color: $light;
+								border: 1px solid $ocean;
+								padding: 10px;
+								max-width: 5px;
+							}
+						}
+						td {
+							border: 1px solid $ocean;
+							padding: 10px;
+						}
+					}
+				}
+			}
+			.image-container {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+			    justify-content: center;
+			    align-items: center;
+			    text-align: center;
+				
+				.image-caption {
+					text-align: center;
+					font-family: $mavenRegular;
+					font-size: 16px;
+					background-color: rgba(248, 156, 28, 0.85);
+					color: $light;
+					padding: 20px;
+					opacity: 0;
+					position: absolute;
+					top: 75%;
+    				width: 60%;
+    				left: 0;
+    				right: 0;
+    				margin: auto;
+    				// margin: auto;
+				}
+
+				img {
+					height: 100%;
+					width: 70%;
+				}
+			}
+			.strong {
+				font-family: $mavenBold;
+				text-indent: 0;
+			}
+		}
+	}
+
+	#page_navigation {
+		float: right;
+		margin: 30px 0;
+		a {
+			border: 1px solid #00aeef;
+			color: #00aeef;
+			font-family: 'maven_proregular';
+			padding: 8px 10px;
+			margin: 0 5px;
+			font-size: 11px;
+			text-decoration: none;
+			&:hover, &.active_page {
+				background-color: #00aeef;
+				color: #FFF;
+			}
+		}
+	}
+
+	.csr-body  {
+		.bottom-image {
+			height: auto;
+			width: 100%;
+		}
+		.name {
+			margin-top: 10px;
+		}
+		p > span {
+			font-family: $mavenBold;
+		}
+		.sig-container {
+			display: flex;
+			justify-content: flex-end;
+			.sig {	
+				display: flex;
+				flex-direction: column;
+				img {
+					height: auto;
+					width: 160px;
+				}
+				p {
+					margin: 0;
+				}
+			}
+		}
+		.timeline {
+			position: relative;
+			.question {
+				
+			}
+		}
+	}
+}

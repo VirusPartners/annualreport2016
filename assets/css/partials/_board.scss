@@ -1,0 +1,348 @@
+#bot {
+	ul.message-tab {
+		margin: 60px 0;
+	}
+	margin: 20px;
+	.bot-parent {
+		display: none;
+		&.active {
+			display: block;
+		}	
+		.bot-container {
+			position: relative;
+			.overlay {
+			    background-color: #fff;
+			    opacity: 0;
+			    height: 100%;
+			    width: 100%;
+			    position: absolute;
+			    transition: all 0.5s ease;
+			    &.overlay-active {
+			    	opacity: 0.5;
+			    }
+			}
+			.board-of-trustees {
+				height: auto;
+				width: 100%;
+			}
+			.board-of-trustees-image {
+				cursor: pointer;
+			}
+			.board-of-trustees-name {
+			    position: absolute;
+			    background-color: orange;
+			    padding: 10px;
+			    color: #fff;
+			    font-family: maven_probold;
+			    text-decoration: none;
+			    cursor: default;
+			    z-index: 1;
+			    cursor: pointer;
+			    text-align: center;
+			    &[href='#benitez'] {
+			    top: 9%;
+		    left: 2%;
+			    }
+			    &[href='#nina'] {
+		    top: 19%;
+		    left: 10%;
+					z-index: 2;
+			    }
+			    &[href='#gorrez'] {
+			         top: 15%;
+		    left: 20%;
+			    }
+			    &[href='#lao'] {
+		       	      top: 26%;
+		    left: 30%;
+		    z-index: 2;
+				    z-index: 2;
+			    }
+			    &[href='#nico'] {
+		       	   	    top: 10%;
+		    left: 34%;
+			    }
+			    &[href='#mona'] {
+				    top: 7%;
+				    left: 47%;
+			    }	    
+			    &[href='#holifena'] {
+				   top: 10%;
+left: 55%;
+		    		z-index: 2;
+			    }
+			    &[href='#lazaro'] {
+		       	  top: 5%;
+left: 71%;
+			    }
+			    &[href='#edlim'] {
+		   	        top: 26%;
+		    		left: 82%;
+			    }
+			}
+			#luisbenitez {
+			    position: absolute;
+			    top: 18%;
+			    left: 2.4%;
+			    height: auto;
+			    width: 13.5%;
+			    z-index: 1;
+			}
+			#ninaaguas {
+			    position: absolute;
+			    top: 29%;
+			    left: 1%;
+			    height: auto;
+			    width: 29%;
+			    z-index: 1;
+			}
+			#marrietagorrez {
+		        position: absolute;
+			    top: 24%;
+			    left: 22.8%;
+			    height: auto;
+			    width: 11%;
+			    z-index: 1;
+			}
+			#luislao {
+		        position: absolute;
+			    top: 37.5%;
+			    left: 27%;
+			    height: auto;
+			    width: 43%;
+			    z-index: 1;
+			}
+			#nicojosenolledo {
+		        position: absolute;
+			    top: 19.3%;
+			    left: 33%;
+			    height: auto;
+			    width: 15.6%;
+			    z-index: 1;
+			}
+			#monalisadelacruz {
+		        position: absolute;
+			    top: 19.3%;
+			    left: 52.5%;
+			    height: auto;
+			    width: 13%;
+
+			    z-index: 1;
+			}	
+			#jesusalfonsohofilena {
+		        position: absolute;
+			    top: 22.9%;
+			    left: 58%;
+			    height: auto;
+			    width: 18%;
+			    z-index: 1;
+			}
+			#delfinlazaro {
+		        position: absolute;
+			    top: 15.9%;
+			    left: 74%;
+			    height: auto;
+			    width: 15.5%;
+			    z-index: 1;
+			}
+			#franciscoedlim {
+		        position: absolute;
+			    top: 35.1%;
+			    left: 75%;
+			    height: auto;
+			    width: 25%;
+			    z-index: 1;
+			}
+		}
+
+		.mobileview {
+			display: none;
+			position: relative;
+			.row {
+				margin-bottom: 100px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.bot-wrapper {
+					img {
+
+					}
+					p {
+						position: absolute;
+						font-family: $mavenBold;
+						font-size: 16px;
+						color: $sun;
+					}
+				}	
+			}
+		}
+
+		.fltr {
+			margin: 20px 0;
+			font-family: $mavenRegular;
+			font-size: 16px;
+			span {
+				font-style: italic;
+				font-family: $mavenRegular;
+				font-size: 16px;
+			}
+		}
+
+		.btn {
+			background-color: transparent;
+			&:focus {
+				outline: none;
+			}
+			&:active {
+				box-shadow: none;
+			}
+			h2 {
+				text-align: left;
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 15px 0 15px 0;
+				font-size: 18px;
+				text-transform: uppercase;
+			}
+			span.credentials-arrow {
+				img {
+				    height: auto;
+		    		width: 15px;
+				    transform: rotate(-90deg);
+				    transition: all 1s ease;
+				    margin: 0 20px 0 0 !important;
+				    &.rotate {
+				    	transform: rotate(90deg);
+				    }
+				}
+			}
+		}
+
+		.credentials-wrapper {
+			display: flex;
+			.image-wrapsht {
+				margin-right: 5%;
+				img {
+
+				}
+			}
+			img {
+				// width: 100%;
+				// height: 100%;
+				// max-width: 274px;
+				// margin: 0 30px 13px 0 !important;
+				// border: 1px solid $ocean;
+			}
+			// .wrap-this-up {
+			// 	width: 100%;
+			// 	height: 100%;
+			// 	margin: 0 30px 13px 0 !important;
+			// 	a#rtbot {
+			// 		color: $ocean;
+			// 		font-family: $mavenBold;
+			// 		font-size: 16px;
+			// 		border: 1px solid $sun;
+			// 		padding: 10px;
+			// 		text-decoration: none;
+			// 	}
+			// }
+			p {
+				text-indent: 30px;
+				font-size: 16px;
+				line-height: 24px;
+				color: #585858;
+				font-family: 'maven_proregular';
+				margin-bottom: 0;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.collapse {
+		    padding-top: 20px;
+
+			.print {
+			        // text-align: center;
+			       	margin: 20px 0;
+				    border-bottom: 1px solid orange;
+				    padding-bottom: 20px;
+				    position: relative;
+				    // padding: 10px;
+				    // width: 50%;
+				    // background-color: orange;
+				    // float: right;
+			    a {
+				    font-family: maven_probold;
+				    font-size: 16px;
+				    text-transform: uppercase;
+				    color: $ocean;
+				    text-decoration: none;
+				    position: absolute;
+				    &:nth-of-type(1) {
+						left: 0;
+				    }
+				    &:nth-of-type(2) {
+						right: 0;
+				    }
+
+			       span {
+		       	 		height: 17px;
+					    width: 17px;
+					    display: inline-block;
+					    background: url(../images/download-icon-ocean.png);
+					    background-repeat: no-repeat;
+					    margin-right: 10px;
+			       }
+			    }
+			}
+		}
+
+		// #csr .messages {
+		// 	.desc {
+		// 		max-width: 50%;
+		// 		border: 5px solid $sun;
+		// 		h2 {
+		// 			font-family: $mavenRegular;
+		// 			color: $ocean;
+		// 		}
+		// 		p {
+		// 			font-family: $mavenRegular;
+		// 			font-size: 16px;
+		// 			color: #000;
+		// 			text-indent: 30px;
+		// 		}
+		// 	}
+		// }
+
+		.fancybox-container  {
+			.desc {
+				max-width: 50%;
+				border: 5px solid $sun;
+				h2 {
+					font-family: $mavenRegular;
+					color: $ocean;
+				}
+				p {
+					font-family: $mavenRegular;
+					font-size: 16px;
+					color: #000;
+					text-indent: 30px;
+				}
+			}
+		}
+
+		.member-table {
+			margin-bottom: 20px;
+		}
+		.space {
+			margin-bottom: 10px 0;
+		}
+		.members-container {
+			display: flex;
+		}
+		.bot-container .bot-body h2 {
+			margin: 15px 0;
+		}
+	}
+}

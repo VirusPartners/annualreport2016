@@ -1,0 +1,372 @@
+#leadership {
+	.mobileview {
+		display: none;
+	}
+	.message-tab {
+		display: flex;
+	    justify-content: space-between;
+	    position: relative;
+	    margin: 40px 0 !important;
+        border-bottom: 1px solid $fade-dark;
+        li.message-list {
+			border-bottom: 3px solid transparent;
+	 		padding-bottom: 17px;
+	 		transition: all 0.5s ease;
+			display: flex;
+			a.list-title {
+				border: none;
+				font-family: $mavenRegular;
+				font-size: 18px;
+				color: $fade-dark;
+				text-transform: uppercase;
+			    display: inline-block;
+			    padding: 0;
+				margin-top: 5px;
+			}
+			
+			#master-list {
+					a {
+	    			    padding: 20px;
+					    color: #fff;
+					    text-align: center;
+					    background-color: #00aeef;
+					    transition: all 0.3s ease;
+					    text-transform: uppercase;
+		    			&:hover {
+		    				background-color: $light;
+			    			background-image: none;
+			    			color: $ocean;
+		    			}
+		    		}
+				}
+
+			ul.dropdown-menu {
+			    border: 1px solid #00aeef;
+			    padding: 0;
+			    top: 0;
+			    margin-top: 60%;
+			    width: 250px;
+			    background: #00aeef;
+			    position: absolute;
+			    li {
+			    	border-bottom: 1px solid #fff;
+			    	width: 250px;
+			    	border-right: 1px solid #00aeef;
+			    	&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+			    		@extend #master-list;
+			    	}
+			    }
+			}
+			// line below tab
+			&:hover, &.message-list-active, &.open {
+			    border-bottom: 3px solid $ocean;
+		 		padding-bottom: 17px;
+			}
+			// icon and text 
+			&:nth-of-type(1) {
+				position: absolute;
+				left: 0;
+				&:hover, &.message-list-active {
+					a.list-title {
+						color: $ocean;
+						background-color: transparent;
+					}
+				}
+			}
+			&:nth-of-type(2) {
+				&:hover, &.message-list-active, &.open {
+					a.list-title {
+						color: $ocean;
+						background-color: transparent;
+					}
+				}
+				a {
+					span.caret {
+					    position: absolute;
+					    top: 8px;
+					    right: -30px;
+					}
+				}
+			}
+		}
+	}
+	.bot-container {
+		position: relative;
+		overflow: hidden;
+		.overlay {
+		    background-color: #fff;
+		    opacity: 0;
+		    height: 100%;
+		    width: 100%;
+		    position: absolute;
+		    transition: all 0.5s ease;
+		    &.overlay-active {
+		    	opacity: 0.5;
+		    }
+		}
+		.board-of-trustees {
+			height: auto;
+			width: 100%;
+		}
+		.leadership-wrapper {
+			// position: absolute;
+		 //    display: flex;
+		 //    flex-direction: column;
+		 //    height: auto;
+		    .board-of-trustees-image {
+	    		z-index: 1;
+	    	}
+		    &:nth-child(1) {
+		    	img {
+		    	    top: 37.8%;
+				    left: 10.9%;
+				    position: absolute;
+				    height: auto;
+				    width: 19.1%;
+		    	}
+		    }
+		    &:nth-child(2) {
+		    	img {
+		    		position: absolute;
+				    height: auto;
+				    width: 18%;
+			    	top: 39.3%;
+			    	left: 30.5%;		    	
+		    	}
+		    }
+		    &:nth-child(3) {
+		    	img {
+	    		    position: absolute;
+				    height: auto;
+				    width: 27%;
+				    top: 23.4%;
+				    left: 41.4%;  			
+		    	}
+		    }
+		    &:nth-child(4) {
+		    	img {
+	    		    position: absolute;
+				    height: auto;
+				    width: 17%;
+				    top: 39%;
+				    left: 62.5%;		    	
+		    	}
+		    }
+		    &:nth-child(5) {
+		    	img {
+		    		position: absolute;
+				    height: auto;
+				    width: 20%;
+				    top: 38.3%;
+				    left: 76.8%;			    
+		    	}
+		    }
+			.board-of-trustees-name {
+			    background-color: orange;
+			    padding: 10px;
+			    color: #fff;
+			    font-family: maven_probold;
+			    text-decoration: none;
+			    cursor: default;
+			    z-index: 1;
+			    position: absolute;
+			    text-align: center;
+			    span {
+			    	&:nth-of-type(1) {
+			    		font-family: $mavenBold;
+			    		font-size: 16px;
+			    	}
+			    	&:nth-of-type(2) {
+			    		font-family: $mavenBold;
+			    		font-size: 14px;
+			    	}
+			    	&:nth-of-type(3) {
+			    		font-family: $mavenRegular;
+			    		font-size: 14px;
+			    	}
+			    }
+			    &[href='#jesusalfonso'] {
+				    top: 27%;
+    				left: 8%;
+			    }
+			    &[href='#monalisadelacruz2'] {
+					top: 28.3%;
+					left: 28.5%;
+			    }	    
+			    &[href='#ninaaguas2'] {
+			        top: 12.4%;
+    				left: 49.9%; 
+			    }
+			    &[href='#editaelicano'] {
+					top: 21%;
+					left: 62.5%;
+			    }
+			    &[href='#omarcruz2'] {
+					top: 24.3%;
+					left: 70.8%;
+			    }
+			}
+		}
+	}
+
+	.fltr {
+		margin: 20px 0;
+		font-family: $mavenRegular;
+		font-size: 16px;
+		span {
+			font-style: italic;
+			font-family: $mavenRegular;
+			font-size: 16px;
+		}
+	}
+
+	.btn {
+		background-color: transparent;
+		&:focus {
+			outline: none;
+		}
+	}
+	.leadership-container {
+		&.active {
+			display: block;
+		}
+		.leadership-body {
+			.header-title {
+				margin-bottom: 40px;
+				h2 {
+					text-transform: uppercase;
+					color: $ocean;
+					font-family: $mavenRegular;
+				}
+				span {
+					font-family: $mavenRegular;
+					font-style: italic;
+					font-size: 16px;
+					color: #a0a0a0;
+				}
+				&.fvp {
+					h2 {
+						color: $sun;
+					}
+				}
+			}
+			.image-cards {
+				.image-container {
+					display: flex;
+					justify-content: center;
+					padding-bottom: 10%;
+					.image-card {
+						position: relative;
+						width: 80%;
+						// margin-bottom: 30%;
+						img {
+							width: 100%;
+						}
+						.name {
+						    position: absolute;
+						    z-index: 1;
+						    bottom: 0;
+						    background-color: rgba(0, 174, 239, 0.70);
+						    width: 100%;
+						    text-align: center;
+							p {
+							    color: #fff;
+								font-family: maven_proregular;
+								font-size: 24px;
+								padding: 5px;
+								margin-bottom: 0;	
+							}
+							&.fvp {
+								background-color: rgba(255, 165, 0, 0.80);
+							}
+						}
+						.pos {
+							margin: 15px 0;
+							position: absolute;
+							width: 100%;
+							p {
+								margin-bottom: 0;
+								text-align: center;
+								font-family: serif;
+								font-style: italic;
+								font-size: 18px;
+								color: $dark;
+							}
+						}
+					}
+				}
+				.not-in-photos {
+				    float: right;
+    				border-top: 2px solid #a0a0a0;
+    				p {
+    					margin: 0;
+						font-family: $mavenBold;
+						font-size: 22px;
+						span {
+						    font-family: serif;
+						    font-style: italic;
+						    font-size: 18px;
+						}
+    					&:nth-child(1) {
+							font-size: 16px;
+							font-style: italic;
+							font-family: $mavenRegular;
+							margin-bottom: 10px;
+    					}
+    				}
+				}
+			}
+			.list {
+				h2 {
+					color: $sun;
+					font-family: $mavenRegular;
+					text-transform: uppercase;
+					font-size: 42px;
+				}
+				ul {
+					list-style-type: none;
+					padding: 0;
+					font-family: $mavenRegular;
+					font-size: 16px;
+					color: $dark;
+				}
+				.flex {
+					display: flex;
+					ul {
+						&:nth-child(1) {
+							flex: 1;
+						}
+						&:nth-child(2) {
+							flex: 2;
+						}
+					}
+				}
+			}
+			.note {
+			    border-top: 1px solid #a0a0a0;
+				padding: 10px 0;
+				font-family: $mavenRegular;
+				font-size: 16px;
+				color: #000;
+			}
+		}
+	}
+}
+
+#page_navigation {
+	float: right;
+	margin: 30px 0;
+	a {
+		border: 1px solid #00aeef;
+		color: #00aeef;
+		font-family: 'maven_proregular';
+		padding: 8px 10px;
+		margin: 0 5px;
+		font-size: 11px;
+		text-decoration: none;
+		&:hover, &.active_page{
+			background-color: #00aeef;
+			color: #FFF;
+		}
+	}
+}

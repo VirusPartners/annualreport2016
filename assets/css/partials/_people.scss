@@ -1,0 +1,203 @@
+#people {
+	margin: 20px;
+	.indent {
+		text-indent: 30px;
+		font-size: 16px;
+		font-family: $mavenRegular;
+		// color: #585858;
+	}
+	.insidepage-container {
+		margin: 50px 50px;
+		h2.page-title {
+			font-family: "maven_proregular";
+			font-size: 32px;
+			color: $sun;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+	.people-container {
+		padding: 60px 0;
+		border-bottom: 1px solid #d6d6d6;
+		display: none;
+		&.active {
+			display: block;
+		}
+		.note {
+			padding: 0;
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				span {
+					color: $ocean;
+				}
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 15px;
+				font-size: 18px;
+			}
+			p {
+				// color: #585858;
+			}
+			.head-text {
+				color: #434343;
+				font-size: 24px;
+				font-family: $mavenRegular;
+				line-height: 1.5em;
+			}
+			.blurb {
+			    color: #434343;
+			    font-size: 35px;
+			    font-family: $savoye;
+			    font-weight: bold;
+			    text-indent: 30px;
+			}
+		}
+		.people-thumb {
+			text-align: right;
+			img {
+				width: 100%;
+				max-width: 520px;
+				height: auto;
+			}
+		}
+		.people-body {
+			clear: both;
+			p.specialshttxt {
+				text-indent: 0;
+				margin-bottom: 0;
+				margin-top: 20px;
+			}
+			h3.specialshth3 {
+				margin-top: 0;
+			}
+			.big {
+				font-size: 24px;
+				line-height: 32px;
+			}
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 48px 0 15px 0;
+				font-size: 18px;
+				text-transform: uppercase;
+				&.no-leading {
+					margin: 15px 0 15px 0;
+				}
+			}
+			p {
+				text-indent: 30px;
+				font-size: 16px;
+				line-height: 24px;
+				color: #585858;
+				font-family: 'maven_proregular';
+				margin-bottom: 0;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+			h3 {
+				font-size: 16px;
+				font-family: $mavenRegular;
+				color: #585858;
+			}
+			ul {
+				font-family: $mavenRegular;
+				font-size: 16px;
+				color: #585858;
+				li {
+					font-family: $mavenRegular;
+					color: #585858;
+				}
+			}
+			.table {
+				display: flex;
+				justify-content: center;
+				flex-direction: row;
+				.insular-life-contributions {
+					overflow: scroll;
+					margin: 20px 0;
+					font-family: $mavenRegular;
+					width: 100%;
+					tr {
+						&:nth-child(1) {
+							background-color: $ocean;
+							.header {
+								text-transform: uppercase;
+								text-align: center;
+								color: $light;
+								border: 1px solid $ocean;
+								padding: 10px;
+								max-width: 5px;
+							}
+						}
+						td {
+							border: 1px solid $ocean;
+							padding: 0 10px;
+
+						}
+						&.extension {
+							th {
+								background-color: $ocean;
+								text-transform: uppercase;
+								text-align: center;
+								color: $light;
+								border: 1px solid $ocean;
+								padding: 10px;
+								max-width: 5px;
+							}
+							td {
+								border: 1px solid $ocean;
+								padding: 0 10px;
+
+							}	
+						}
+						&.nocontent {
+							height: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#page_navigation {
+		float: right;
+		margin: 30px 0;
+		a {
+			border: 1px solid #00aeef;
+			color: #00aeef;
+			font-family: 'maven_proregular';
+			padding: 8px 10px;
+			margin: 0 5px;
+			font-size: 11px;
+			text-decoration: none;
+			&:hover, &.active_page {
+				background-color: #00aeef;
+				color: #FFF;
+			}
+		}
+	}
+
+	.people-body  {
+		.sig-container {
+			display: flex;
+			justify-content: flex-end;
+			.sig {	
+				display: flex;
+				flex-direction: column;
+				img {
+					height: auto;
+					width: 160px;
+				}
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

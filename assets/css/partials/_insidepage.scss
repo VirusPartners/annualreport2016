@@ -1,0 +1,71 @@
+#inside-page-header {
+	position: relative;
+	@import 'navigation';
+	#banner {
+	    height: 360px;
+    	overflow: hidden;
+		margin-bottom: 0;
+		.banner-inner {
+			height: 360px;
+			.banner-item {	
+				height: 360px;
+				.header-content {
+					.header-logo {
+						position: absolute;
+						z-index: 1;
+						left: 5%;
+						top: 5%;
+						img {
+							height: 120px;
+						}
+					}
+				}
+				// ====================
+				.vidrep {
+					height: 360px;
+					img {
+						width: 100%;
+					    object-fit: cover;
+					    height: 899px;
+					}
+				}
+				// ====================
+				video#header-video {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	.header-caption {
+	    display: flex;
+	    position: absolute;
+	    z-index: 1;
+        left: 10%;
+		top: initial;
+		top: auto;
+		bottom: 10%;
+	    .header-side-text {
+	    	p {
+	    		color: $light;
+	    		text-transform: uppercase;
+	    		padding-right: 30px;
+	    		font-family: $mavenMedium;
+	    		text-align: right;
+	    		font-size: 22px;
+	    		line-height: 1em;
+	    		margin-top: 4px;
+	    	}
+	    }
+	    .header-title {
+	    	p {    		
+				color: $light;
+				font-size: 32px;
+				line-height: 1em;
+				border-left: 3px solid $light;
+				padding-left: 30px;
+				font-family: $mavenBold;
+	    	}
+	    }
+	}
+}

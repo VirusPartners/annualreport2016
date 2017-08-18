@@ -1,0 +1,431 @@
+.insidepage {
+	margin: 20px;
+	.indent {
+		text-indent: 30px;
+		font-size: 16px;
+		font-family: $mavenRegular;
+		color: #585858;
+		margin-bottom: 0;
+		line-height: 24px;
+	}
+	.insidepage-container {
+		ul.message-tab {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			margin: 0;
+			li.message-list {
+			border-bottom: 3px solid transparent;
+			padding-bottom: 17px;
+			transition: all 0.5s ease;
+			display: flex;
+			span.consolidated-icon, span.five-year-icon, span.audited-icon {
+				height: 56px;
+				width: 56px;
+				display: inline-block;
+			}
+			a.list-title {
+				border: none;
+				font-family: $mavenRegular;
+				font-size: 14px;
+				color: $fade-dark;
+				text-transform: uppercase;
+				display: inline-block;
+				padding: 0;
+				margin-top: 5px;
+			}
+
+			// line below tab
+			&:hover, &.message-list-active, &.open {
+				border-bottom: 3px solid $ocean;
+				padding-bottom: 17px;
+			}
+			// icon and text 
+				&:nth-of-type(1) {
+					position: absolute;
+					left: 0;
+					span.consolidated-icon {
+						background: url(../images/consolidated.png);
+						background-position: 56px 0;
+						background-repeat-y: no-repeat;
+					}
+					&:hover, &.message-list-active {
+					a.list-title {
+						color: $ocean;
+						background-color: transparent;
+					}
+					span.consolidated-icon {
+						background-position: 0 0;
+					}
+					}
+				}
+				&:nth-of-type(2) {
+					span.five-year-icon {
+						background: url(../images/five-year.png);
+						background-position: 0 0;
+						background-repeat-y: no-repeat;
+					}
+					&:hover, &.message-list-active, &.open {
+						a.list-title {
+							color: $ocean;
+							background-color: transparent;
+						}
+						span.five-year-icon {
+							background-position: 56px 0;
+						}
+					}
+					a {
+						span.caret {
+							position: absolute;
+							top: 20px;
+							right: -30px;
+						}
+					}
+				}         
+				&:nth-of-type(3) {
+					position: absolute;
+					right: -0;
+					span.audited-icon {
+						background: url(../images/audited.png);
+						background-position: 0 0;
+						background-repeat-y: no-repeat;
+					}
+					&:hover, &.message-list-active, &.open {
+						a.list-title {
+						color: $ocean;
+						background-color: transparent;
+					}
+					span.audited-icon {
+						background-position: 56px 0;
+					}
+					}
+					a {
+						span.caret {
+							position: absolute;
+							top: 20px;
+							right: -30px;
+						}
+					}
+				}
+			}
+		}
+		margin: 50px 50px;
+		h2.page-title {
+			font-family: "maven_proregular";
+			font-size: 32px;
+			color: $sun;
+			text-transform: uppercase;
+			margin-top: 0;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.policyholder-container {
+	padding: 60px 0;
+	border-bottom: 1px solid #d6d6d6;
+	display: none;
+	.message-container {
+		.policyholder-head {
+			h2 {
+				font-family: $mavenBold;
+				color: $ocean;
+				margin: 48px 0 15px 0;
+				font-size: 18px;
+				text-transform: uppercase;
+				&.no-leading {
+					margin: 15px 0;
+				}
+			}
+		}
+	}
+	&.active {
+		display: block;
+	}
+	.unionforlife {
+        position: fixed;
+	    top: 50%;
+		right: -33px;
+	    padding: 15px;
+	    background-color: $sun;
+	    // -webkit-transition: all 0.5s ease;
+	    // transition: all 0.5s ease;
+	    z-index: 99;
+		transform: rotate(90deg);
+	    a {
+	    	color: $light;
+	    	font-size: 16px;
+	    	font-family: maven_probold;
+	    	text-decoration: none;
+	    }
+	}
+	.blurb {
+	    color: $sun;
+	    font-size: 35px;
+	    font-family: $savoye;
+	    text-indent: 30px;
+        width: 50%;
+		margin: 20px auto;
+	}
+	
+	.title {
+		color: $sun;
+		font-family: $savoye;
+		font-size: 86px;
+		font-weight: bold;
+		span {
+			color: $ocean;
+		}
+	}
+	.head-text {
+		color: #434343;
+		font-size: 24px;
+		font-family: $mavenRegular;
+		line-height: 32px;
+	}
+
+	.title-sub-container {
+			position: relative;
+			.sub {
+				position: absolute;
+			    font-size: 25px;
+			    font-family: $mavenBold;
+			    text-transform: uppercase;
+			    text-align: left;
+			    top: 85%;
+			    left: 0;
+			    span {
+			    	color: $ocean;
+			    }
+			}
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				margin-bottom: 36px;
+				span {
+					color: $ocean;
+				}
+			}
+		}
+	.note {
+		padding: 0;
+		.sub {
+				position: absolute;
+			    font-size: 16px;
+			    font-family: $mavenBold;
+			    text-transform: uppercase;
+			    text-align: left;
+			    top: 100%;
+			    left: 37%;
+			}
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				span {
+					color: $ocean;
+				}
+			}
+		.title-sub-container {
+			position: relative;
+			.sub {
+				position: absolute;
+			    font-size: 16px;
+			    font-family: $mavenBold;
+			    text-transform: uppercase;
+			    text-align: left;
+			    top: 85%;
+			    left: 37%;
+			}
+			.title {
+				color: $sun;
+				font-family: $savoye;
+				font-size: 86px;
+				font-weight: bold;
+				margin-bottom: 36px;
+				span {
+					color: $ocean;
+				}
+			}
+		}
+		h2 {
+			font-family: $mavenBold;
+			color: $ocean;
+			margin: 15px;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		p {
+			color: #585858;
+			line-height: 1.5em;
+		}
+		.head-text {
+			color: #434343;
+			font-size: 24px;
+			font-family: $mavenRegular;
+			line-height: 1.5em;
+		}
+		.blurb {
+		    color: $sun;
+		    font-size: 35px;
+		    font-family: $savoye;
+		    font-weight: bold;
+		    text-indent: 30px;
+		}
+	}
+	.policyholder-thumb {
+		text-align: right;
+		float: right;
+		width: 50%;
+		img {
+			width: 100%;
+			max-width: 520px;
+			height: auto;
+		}
+		.blurb {
+			text-align: center;
+		}
+	}
+	.policyholder-body {
+		.ital {
+			font-style: italic;
+		}
+		clear: both;
+		.floating-icon {
+			direction: flex;
+		}
+		h2 {
+			font-family: $mavenBold;
+			color: $ocean;
+			margin: 48px 0 15px 0;
+			font-size: 18px;
+			// text-transform: uppercase;
+			&.no-leading {
+				margin: 15px 0 15px 0;
+			}
+		}
+		p {
+			text-indent: 30px;
+			font-size: 16px;
+			color: #585858;
+			font-family: 'maven_proregular';
+			margin-bottom: 0;
+			line-height: 24px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			&.blurb {
+			    color: $sun;
+			    font-weight: normal;
+			    font-size: 35px;
+			    font-family: $savoye;
+			    text-indent: 30px;
+		        width: 50%;
+				margin: 20px auto;
+				line-height: 43px;
+			}
+		}
+		p.hash {
+			color: $sun;
+			font-family: $mavenBold;
+			font-size: 42px;
+			margin: 20px 0;
+		}
+		.union-for-life {
+			border: 1px solid $sun;
+			padding: 40px;
+			position: relative;
+			margin: 40px 0;
+			.union-for-life-container {
+				span.title {
+				    position: absolute;
+				    top: -30px;
+				    left: 11px;
+				    font-family: savoye let;
+				    background-color: white;
+				    font-size: 42px;
+				    padding: 0 20px;
+				    color: orange;
+				    font-weight: bold;
+				}
+				.big-letter {
+					line-height: 1em;
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
+
+#page_navigation {
+	float: right;
+	margin: 30px 0;
+	a {
+		border: 1px solid #00aeef;
+		color: #00aeef;
+		font-family: 'maven_proregular';
+		padding: 8px 10px;
+		margin: 0 5px;
+		font-size: 11px;
+		text-decoration: none;
+		&:hover, &.active_page{
+			background-color: #00aeef;
+			color: #FFF;
+		}
+	}
+}
+
+.policyholder-body  {
+	.blurb {
+	    color: $sun;
+	    font-size: 35px;
+	    font-family: $savoye;
+	    font-weight: bold;
+	    text-indent: 30px;
+	    line-height: 1em;
+	    margin-top: 20px 0;
+	}
+	.sig-container {
+		display: flex;
+		justify-content: flex-end;
+		.sig {	
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			img {
+				height: auto;
+				width: 160px;
+			}
+			p {
+				font-family: $mavenRegular;
+				font-size: 16px;
+				margin: 0;
+				&:nth-of-type(1) {
+					font-family: $mavenBold;
+				}
+			}
+		}
+	}
+}
+
+.video-link {
+	margin: 20px 0;
+	img {
+		height: auto;
+		width: 20%;
+		float: left;
+	}
+	.vid-text {
+		padding: 16px;
+		float: left;
+		margin-left: 20px;
+		a {
+			color: $ocean;
+			font-size: 18px;
+			text-decoration: none;
+		}
+	}
+}
